@@ -74,7 +74,7 @@ class GmailConnection extends Google_Client
 	 *
 	 * @return mixed|null
 	 */
-	private function refreshTokenIfNeeded()
+	public function refreshTokenIfNeeded()
 	{
 		if ($this->isAccessTokenExpired()) {
 			$this->fetchAccessTokenWithRefreshToken($this->getRefreshToken());
