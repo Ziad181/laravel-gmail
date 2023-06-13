@@ -37,4 +37,15 @@ class MessageCollection extends Collection
 	{
 		return !!$this->message->pageToken;
 	}
+	
+	
+	/**
+	 * Returns the page token or null
+	 *
+	 * @return string
+	 */
+	public function getNextPageToken()
+	{
+		return $this->message->pageToken;
+	}
 }
